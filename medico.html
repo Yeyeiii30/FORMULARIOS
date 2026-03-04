@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Médico</title>
+    <link rel="stylesheet" href="medico.css">
+</head>
+
+<body>
+
+<div class="formulario">
+
+<div class="header">
+    <div class="titulo">
+        <h1>FORMULARIO MÉDICO</h1>
+        <h2>NOMBRE DEL CENTRO MÉDICO</h2>
+    </div>
+
+    <img src="assets/img/logo.png" alt="Logo del Centro Médico" class="logo">
+    </div>
+
+    <form>
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label>Nombre Completo:</label>
+            <input type="text" required>
+
+            <label>Cédula:</label>
+            <input type="text" required>
+
+            <label>Fecha de Nacimiento:</label>
+            <input type="date" required>
+
+            <label>Sexo:</label>
+            <select required>
+                <option value="">Seleccione</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información Médica</legend>
+
+            <label>Tipo de Sangre:</label>
+            <select>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+            </select>
+
+            <label>Alergias:</label>
+            <textarea rows="3"></textarea>
+
+            <label>¿Tiene alguna enfermedad crónica?</label>
+            <input type="radio" name="cronica"> Sí
+            <input type="radio" name="cronica"> No
+        </fieldset>
+
+        <fieldset>
+            <legend>Síntomas Actuales</legend>
+
+            <input type="checkbox"> Fiebre
+            <input type="checkbox"> Tos
+            <input type="checkbox"> Dolor de cabeza
+            <input type="checkbox"> Dolor corporal
+            <input type="checkbox"> Ninguno
+        </fieldset>
+
+        <fieldset>
+            <legend>Seguro Médico</legend>
+
+            <label>Tipo de Seguro:</label>
+            <select>
+                <option>ARS Humano</option>
+                <option>Senasa</option>
+                <option>Mapfre</option>
+                <option>Sin Seguro</option>
+            </select>
+        </fieldset>
+
+    <div class="firma">
+        <span>Mes, 10, 2029</span>
+        <span>__________________________</span>
+      <span>Nombre y Apellidos</span>
+    </div>
+        <button type="submit">Enviar Formulario</button>
+    </form>
+
+    <footer>
+        <p>WWW.FORMULARIO MÉDICO.COM</p>
+        <p>@ianmpolanco_30</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

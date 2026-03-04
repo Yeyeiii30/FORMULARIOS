@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Rent Car</title>
+    <link rel="stylesheet" href="rentcar.css">
+</head>
+<body>
+
+<div class="contenedor">
+    <h1>FORMULARIO DE ALQUILER DE VEHÍCULO</h1>
+
+    <form>
+        <h3>DATOS DEL CLIENTE</h3>
+
+        <label>Nombre Completo</label>
+        <input type="text" required>
+
+        <div class="fila">
+            <div>
+                <label>Cédula / Pasaporte</label>
+                <input type="text" required>
+            </div>
+            <div>
+                <label>Licencia de Conducir</label>
+                <input type="text" required>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div>
+                <label>Fecha de Nacimiento</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Teléfono</label>
+                <input type="tel">
+            </div>
+        </div>
+
+        <label>Correo Electrónico</label>
+        <input type="email">
+
+        <label>Dirección</label>
+        <input type="text">
+
+        <h3>DETALLES DEL ALQUILER</h3>
+
+        <div class="fila">
+            <div>
+                <label>Fecha de Retiro</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Fecha de Devolución</label>
+                <input type="date">
+            </div>
+        </div>
+
+        <label>Tipo de Vehículo</label>
+        <select>
+            <option>Económico</option>
+            <option>SUV</option>
+            <option>Camioneta</option>
+            <option>Lujo</option>
+        </select>
+
+        <label>Método de Pago</label>
+        <div class="radio">
+            <label><input type="radio" name="pago"> Efectivo</label>
+            <label><input type="radio" name="pago"> Tarjeta</label>
+            <label><input type="radio" name="pago"> Transferencia</label>
+        </div>
+
+        <label>Observaciones</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Confirmar Reserva</button>
+    </form>
+</div>
+
+<footer class="footer">
+   <p>© 2026 FORMULARIO DE ALQUILER DE VEHÍCULO</p>
+</footer>
+
+</body>
+</html>
